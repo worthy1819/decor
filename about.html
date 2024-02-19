@@ -177,7 +177,7 @@
                         <textarea name="text" placeholder="Messege" class="border-b-2 border-green-800 focus:outline-none w-full" cols="70" rows="5"></textarea>
                     </div>
                     <div class="mt-9 flex justify-center items-center">
-                        <a href="index.html" class="btn bg-green-800 text-white hover:text-green-800 px-12">Send Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                        <a onclick="myFunction()" href="index.html" class="btn bg-green-800 text-white hover:text-green-800 px-12">Send Now <i class="fa-solid fa-arrow-right-long"></i></a>
                     </div>
                 </form>
             </div>
@@ -230,6 +230,10 @@
         AOS.init({
             once: true
         });
+
+        function myFunction() {
+            alert("Sends Successfully!!!");
+        }
     </script>
 </body>
 </html>
